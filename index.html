@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prisma Filmes</title>
+  <!-- Importando fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Importando estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <h1>ALUGUEL DE DVD'S</h1>
+    <div class="name">
+      <div>
+        <label for="for_name">Nome</label>
+        <input type="text" name="name" id="for_name">
+      </div>
+      <div>
+        <label for="for_last_name">Sobrenome</label>
+        <input type="text" name="for_last_name" id="last_name"> 
+      </div>
+    </div>
+
+    <label for="for_email">Email</label>
+    <input type="email" name="for_email" id="email">
+
+    <label for="for_tel">Telefone</label>
+    <input type="tel" name="for_tel" id="tel">
+    
+    <div class="name">
+      <div>
+        <label for="for_date_start">Início</label>
+        <input type="datetime-local" name="for_date_start" id="date">
+      </div>
+      <div>
+        <label for="for_date_end">Fim</label>
+        <input type="datetime-local" name="for_date_end" id="date">
+      </div>
+    </div>
+    
+    <label for="for_film">Filmes</label>
+    <select name="for_film" id="film">
+      <option value="" disabled selected>Nenhum</option>
+      <option value="the_lord_of_rings">O Senhor dos Anéis</option>
+      <option value="cars">Carros</option>
+      <option value="thor">Thor</option>
+    </select>
+
+    <label for="for_password">Senha</label>
+    <input type="password" name="for_password" id="password">
+
+    <button type="submit">RESERVAR</button>
+  </form>
+</body>
+</html>

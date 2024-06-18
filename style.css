@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: #26619c;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  margin: 1rem auto;
+}
+
+label {
+  margin-top: .4rem;
+}
+
+input, select, button {
+  border: #26619c solid .1rem ;
+  border-radius: 0.5rem;
+  width: 100%;  
+} 
+
+input, select {
+  height: 2rem;
+  padding-left: .4rem;
+}
+
+button {
+  background-color: #26619c;
+  color: #fff;
+  height: 3rem;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: .4rem;
+  margin-top: 1rem;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem; /* Precisa de display: flex */
+}
+
+.name div {
+  width: 100%;
+}
