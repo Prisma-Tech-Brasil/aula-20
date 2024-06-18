@@ -20,7 +20,7 @@ form {
   margin: 1rem auto;
 }
 
-label {
+label, .two__inputs {
   margin-top: .4rem;
 }
 
@@ -45,12 +45,12 @@ button {
   margin-top: 1rem;
 }
 
-.name {
+.two__inputs {
   display: flex;
   justify-content: space-between;
   gap: 1rem; /* Precisa de display: flex */
 }
 
-.name div {
+.two__inputs div {
   width: 100%;
 }
