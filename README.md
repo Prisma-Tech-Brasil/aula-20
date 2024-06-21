@@ -11,9 +11,6 @@ Vamos colocar as mãos na massa! Siga os passos abaixo para fazer o fork deste r
 1. **Faça login no GitHub**: Caso ainda não tenha uma conta, crie uma [aqui](https://github.com/).
 2. **Acesse o repositório original**: Vá para o repositório do curso clicando [aqui](https://github.com/Prisma-Tech-Brasil/aula-11).
 3. **Fork it!**: No canto superior direito da página do repositório, clique no botão "Fork". Isso criará uma cópia do repositório no seu perfil do GitHub.
-
-![Fork](https://github.com/FortAwesome/Font-Awesome/issues/14803#issue-424557006)]
-
 4. **Clone o seu repositório**: Agora, no seu perfil, você verá o repositório que acabou de forkar. Clique nele e copie o link HTTPS ou SSH. No seu terminal, digite:
 
    ```bash
@@ -30,7 +27,7 @@ Vamos colocar as mãos na massa! Siga os passos abaixo para fazer o fork deste r
 
 ## Materiais de Aula
 
-Dentro deste repositório, você encontrará um arquivo PDF com o conteúdo da aula. Este arquivo é fundamental para acompanhar as explicações e revisitar os conceitos ensinados. O arquivo está localizado na pasta `materiais` e pode ser acessado [aqui](materiais/aula.pdf).
+Dentro deste repositório, você encontrará um arquivo PDF com o conteúdo da aula. Este arquivo é fundamental para acompanhar as explicações e revisitar os conceitos ensinados. O arquivo está localizado na pasta `materiais`.
 
 ## Praticando e Revisando
 
