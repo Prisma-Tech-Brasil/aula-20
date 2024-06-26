@@ -1,60 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prisma Filmes</title>
-  <!-- Importando fonte -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:
-    wght@400;700&display=swap" rel="stylesheet">
-  <!-- Importando estilos -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <form>
-    <h1>ALUGUEL DE DVD'S</h1>
-    <div class="two__inputs">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locações PRISMA</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Corpo do HTML -->
+    <h1>Aluguel de DVD's</h1>
+    <form>
       <div>
-        <label for="for_name">Nome</label>
-        <input type="text" name="name" id="for_name">
-      </div>
+      <section class="section__em__linha">
+        <div>
+          <label for="f_nome">Nome</label>
+          <input type="text" id="f_nome" />
+        </div>
+        <div>
+          <label for="f_sobrenome">Sobrenome</label>
+          <input type="text" id="f_sobrenome" />
+        </div>
+      </section>
+
       <div>
-        <label for="for_last_name">Sobrenome</label>
-        <input type="text" name="for_last_name" id="last_name"> 
+        <label for="f_email">Email</label>
+        <input type="email" id="f_email" />
       </div>
+
+      <div>
+        <label for="f_telefone">Telefone</label>
+        <input type="tel" id="f_telefone" />
+      </div>
+
+      <section class="section__em__linha">
+        <div>
+          <label for="f_inicio">Início da locação</label>
+          <input type="datetime-local" id="f_inicio" />
+        </div>
+        <div>
+          <label for="f_devolucao">Devolução da locação</label>
+          <input type="datetime-local" id="f_devolucao" />
+        </div>
+      </section>
+
+      <label for="f_filmes">Filme</label>
+      <select name="filme" id="f_filmes">
+        <option value="" disabled selected>Escolha o filmes...</option>
+        <option value="oSenhorDosAneis">O senhor dos anéis</option>
+        <option value="divertidamente">Divertidamente</option>
+        <option value="divertidamenteDois">Divertidamente 2</option>
+        <option value="carros">Carros</option>
+        <option value="outro">Carros</option>
+      </select>
+      <div></div>
+      <label for="f_senha">Senha</label>
+      <input type="password" id="f_senha" placeholder="senha" />
+      </div>
+      
+      <button>RESERVAR</button>
+    </form>
+    <div>
+
     </div>
-
-    <label for="for_email">Email</label>
-    <input type="email" name="for_email" id="email">
-
-    <label for="for_tel">Telefone</label>
-    <input type="tel" name="for_tel" id="tel">
-    
-    <div class="two__inputs">
-      <div>
-        <label for="for_date_start">Início</label>
-        <input type="datetime-local" name="for_date_start" id="date">
-      </div>
-      <div>
-        <label for="for_date_end">Fim</label>
-        <input type="datetime-local" name="for_date_end" id="date">
-      </div>
-    </div>
-    
-    <label for="for_film">Filmes</label>
-    <select name="for_film" id="film">
-      <option value="" disabled selected>Nenhum</option>
-      <option value="the_lord_of_rings">O Senhor dos Anéis</option>
-      <option value="cars">Carros</option>
-      <option value="thor">Thor</option>
-    </select>
-
-    <label for="for_password">Senha</label>
-    <input type="password" name="for_password" id="password">
-
-    <button type="submit">RESERVAR</button>
-  </form>
-</body>
+  </body>
 </html>
