@@ -1,51 +1,145 @@
-# Bem-vindo à Turma de Programação!
 
-Olá, futuros mestres do código!
+# Aula: Tabelas no HTML
 
-Este repositório é o seu ponto de partida para dominar as artes obscuras do HTML, CSS, Javascript e afins. Aqui, você encontrará todos os arquivos necessários para acompanhar as aulas e praticar o que aprendemos.
-
-## Passo a Passo para Fazer o Fork
-
-Vamos colocar as mãos na massa! Siga os passos abaixo para fazer o fork deste repositório e ter uma cópia só sua:
-
-1. **Faça login no GitHub**: Caso ainda não tenha uma conta, crie uma [aqui](https://github.com/).
-2. **Acesse o repositório original**: Vá para o repositório do curso clicando [aqui](https://github.com/Prisma-Tech-Brasil/aula-11).
-3. **Fork it!**: No canto superior direito da página do repositório, clique no botão "Fork". Isso criará uma cópia do repositório no seu perfil do GitHub.
-4. **Clone o seu repositório**: Agora, no seu perfil, você verá o repositório que acabou de forkar. Clique nele e copie o link HTTPS ou SSH. No seu terminal, digite:
-
-   ```bash
-   git clone https://github.com/seu-usuario/repo-exemplo.git
-   ```
-
-   ou, se estiver usando SSH:
-
-   ```bash
-   git clone git@github.com:seu-usuario/repo-exemplo.git
-   ```
-
-5. **Explore e codifique**: Pronto! Agora você tem todos os arquivos no seu computador e pode começar a explorar e editar à vontade.
-
-## Materiais de Aula
-
-Dentro deste repositório, você encontrará um arquivo PDF com o conteúdo da aula. Este arquivo é fundamental para acompanhar as explicações e revisitar os conceitos ensinados. O arquivo está localizado na pasta `materiais`.
-
-## Praticando e Revisando
-
-Lembre-se, a prática leva à perfeição! Não se esqueça de:
-
-- **Exercitar**: Explore os exercícios propostos e tente criar suas próprias soluções. Quanto mais você praticar, melhor será sua compreensão.
-- **Revisar**: Leia e releia o material fornecido. A revisão é uma excelente maneira de fixar o conteúdo e descobrir novos detalhes que podem ter passado despercebidos na primeira leitura.
-
-## Dúvidas?
-
-Caso tenha qualquer dúvida, não hesite em perguntar! Use os canais de comunicação da turma, como o discord, para interagir com seus colegas e instrutor.
-
-Bom código e boas práticas!
+Este resumo aborda os conceitos fundamentais sobre tabelas no HTML, incluindo sua importância, tipos e boas práticas.
 
 ---
 
-"Programar é uma arte. Cada linha de código é uma pincelada na tela da sua mente." - Iron Man, talvez.
+## **1. Importância das Tabelas no HTML**
 
-Vamos juntos nessa jornada!
+Tabelas organizam dados em linhas e colunas, facilitando a leitura e a análise de informações. Embora não sejam mais usadas para layout, continuam essenciais para exibição de dados estruturados, como relatórios e calendários.
 
-**Seu Instrutor Favorito**
+---
+
+## **2. Evolução das Tabelas**
+
+- **Antes**: Usadas para estruturar o layout de páginas.
+- **Agora**: Exclusivamente para dados tabulares, com o CSS assumindo a estilização.
+
+---
+
+## **3. Tipos de Tabelas**
+
+### **3.1. Tabelas Básicas**
+Estrutura simples com linhas (`<tr>`) e células (`<td>`).
+```html
+<table>
+  <tr>
+    <td>Nome</td>
+    <td>Idade</td>
+  </tr>
+  <tr>
+    <td>João</td>
+    <td>30</td>
+  </tr>
+</table>
+```
+
+### **3.2. Tabelas com Cabeçalho**
+Adiciona cabeçalhos com a tag `<th>` para melhor compreensão.
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Produto</th>
+      <th>Preço</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Café</td>
+      <td>R$10</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+### **3.3. Tabelas Agrupadas**
+Permitem dividir dados em seções usando `<thead>`, `<tbody>` e `<tfoot>`.
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Quantidade</th>
+      <th>Preço</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Maçã</td>
+      <td>5</td>
+      <td>R$15</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2">Total</td>
+      <td>R$15</td>
+    </tr>
+  </tfoot>
+</table>
+```
+
+---
+
+## **4. Boas Práticas**
+
+1. **Acessibilidade**: Use atributos como `scope` e `headers` para relacionar células e cabeçalhos.
+2. **Semântica**: Utilize `<thead>`, `<tbody>` e `<tfoot>` para organização.
+3. **CSS**: Prefira estilizar tabelas com CSS ao invés de atributos HTML.
+
+---
+
+## **5. Exemplo Completo**
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas no HTML</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    th {
+      background-color: #f4f4f4;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemplo de Tabelas</h1>
+  <h2>Tabela Agrupada</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Quantidade</th>
+        <th>Preço</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Maçã</td>
+        <td>5</td>
+        <td>R$15</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Total</td>
+        <td>R$15</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
+```
